@@ -3,9 +3,12 @@ package com.example.lab1console;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+import org.springframework.core.annotation.Order;
+import org.springframework.stereotype.Component;
 
 @SpringBootApplication
+@Component
+@Order(2)
 public class Lab1ConsoleApplication implements CommandLineRunner{
 
     public static void main(String[] args) {
